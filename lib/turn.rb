@@ -31,6 +31,11 @@ move(board, index, value = "X")
 display_board(board)
 else
 turn(board) 
+until valid_move?(board, index)
+turn(board)
+input = gets.strip
+index = input_to_index(input)
+
 move(board, index, value = "X")
 display_board(board)
 end
@@ -39,4 +44,8 @@ end
 
 
 
+
+=======
+end
+>>>>>>> b2a5d1fd983e79d3a4ea045e8a2959d1f4dee863
 
